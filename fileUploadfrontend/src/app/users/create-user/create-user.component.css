@@ -1,0 +1,20 @@
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsiveImg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#createUser {
+    margin-top: 4%;
+    width: 30%;
+}
+
+input {
+    margin-bottom: 2%;
+}

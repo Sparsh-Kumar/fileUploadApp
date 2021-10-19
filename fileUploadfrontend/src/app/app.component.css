@@ -1,0 +1,9 @@
+
+.clicked {
+    color: black;
+    font-weight: bold;
+}
+
+.unclicked {
+    color: grey;
+}

@@ -1,0 +1,16 @@
+
+<div id="createUser" class="container">
+
+    <div class="responsiveImg">
+        <img *ngIf="!previewAvailable" src="../../../assets/nothingImage.webp">
+        <img *ngIf="previewAvailable" [src]="preview">
+    </div>
+
+    <form id="createUserForm" [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="form-group">
+            <input type="file" (change)="uploadFile($event)">
+            <input type="text" class="form-control" placeholder="John Doe" formControlName="name">
+            <button class="btn btn-danger btn-block btn-lg">Create User</button>
+        </div>
+    </form>
+</div>

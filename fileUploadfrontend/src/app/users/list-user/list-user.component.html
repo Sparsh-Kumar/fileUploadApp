@@ -1,0 +1,18 @@
+
+
+<div class="container">
+    <div *ngFor="let user of users" class="row">
+        <div class="col-md-4">
+            <img class="img-fluid profileimage" src="{{user.profileImage}}">
+        </div>
+
+        <div class="col-md-4 name">
+            <h1 class="display-6">{{user.name}}</h1>
+        </div>
+
+        <div class="col-md-4">
+            <i (click)="deleteUser(user._id)" class="fa fa-trash fa-3x bin" aria-hidden="true"></i>
+        </div>
+
+    </div>
+</div>
